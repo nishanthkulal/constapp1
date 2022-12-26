@@ -7,3 +7,20 @@
     font-family: 'Roboto', sans-serif;
 }
 
+.showcase{
+    background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6), url('./images/background.jpg')) no-repeat center cover/cover;
+    width: 100%;
+    height: 100vh;
+}
+.showcase .navbar-top{
+    width: 100%;
+    display: flex ;
+    padding: 0 80px;
+    margin: 0 auto;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #0a2940;
+    top: 0;
+    left: 0;
+
+}
