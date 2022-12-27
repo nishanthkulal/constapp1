@@ -1,20 +1,22 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,700;1,900&display=swap');
 
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: 'Roboto', sans-serif;
 }
 
-.showcase{
-    background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6), url('./images/background.jpg')) no-repeat center cover/cover;
+.showcase {
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6), url('./images/background.jpg')) no-repeat center cover/cover;
     width: 100%;
     height: 100vh;
 }
-.showcase .navbar-top{
+
+/* top Navbar */
+.showcase .navbar-top {
     width: 100%;
-    display: flex ;
+    display: flex;
     padding: 0 80px;
     margin: 0 auto;
     justify-content: space-between;
@@ -23,4 +25,109 @@
     top: 0;
     left: 0;
 
+}
+
+.showcase .left {
+    display: flex;
+    list-style: none;
+}
+
+.showcase .left li a {
+    display: inline-block;
+    font-size: 13px;
+    text-decoration: none;
+    color: #95A2BB;
+    padding: 5px 15px;
+    transition: all 0.5s ease;
+}
+
+.showcase .left li a:hover {
+    color: #55ba53;
+}
+
+.showcase .left li:first-child {
+    font-weight: 700;
+    border-right: 1px solid #536daf;
+}
+
+.showcase .right {
+    display: flex;
+    list-style: none;
+}
+
+.showcase .right li a {
+    display: inline-block;
+    font-size: 13px;
+    text-decoration: none;
+    color: #95A2BB;
+    padding: 5px 15px;
+    transition: all 0.5s ease;
+}
+
+.showcase .right li a:hover {
+    color: #55ba53;
+}
+
+/* Botton navbar */
+.showcase .navbar-botton {
+    width: 100%;
+    background: #cfcfcf;
+    padding: 25px 95px;
+    align-items: center;
+    margin: 0 auto;
+    display: flex;
+    position: fixed;
+    justify-content: space-between;
+}
+
+.showcase .navbar-botton .brand-left {
+    color: #55ba53;
+    font-size: 20px;
+    font-weight: 700;
+    text-decoration: none;
+    transition: all 0.5s ease;
+}
+.showcase .navbar-botton .brand-left:hover{
+    color: #0a2940;
+}
+.showcase .navbar-botton .menu-right{
+    display: flex;
+    list-style: none;
+    font-size: 14px;
+    font-weight: 600;
+
+}
+
+.showcase .navbar-botton .menu-right a{
+    text-decoration: none;
+    display: inline-block;
+    padding: 0 20px;
+    color: #1a1b1e;
+    transition: all 0.5s ease;
+}
+.showcase .navbar-botton .menu-right a:hover{
+    color: #55ba53;
+}
+
+/* Navnar Botton Search form */
+.navbar-botton .search-form{
+    position: absolute;
+    top: 60%;
+    right: 10%;
+    background: #f4f4f4;
+    width: 350px;
+    height: 28px;
+    display: flex;
+    align-items: center;
+}
+.navbar-botton .search-form input{
+    width: 100%;
+    height: 100%;
+    font-size: 20px;
+    border: none;
+    background: #f4f4f4;
+    color: #1a1b1e;
+    padding: 14px;
+    text-transform: none;
+    outline: none;
 }
