@@ -269,9 +269,53 @@
     background: #0a2940;
     border-radius:5px ;
     box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.3), -5px  -5px 20px rgba(0,0,0.3);
+    transition: all 0.5s ease;
 }
 
 #services .items .item h3{
     color: #55ba53;
     font-size: 16px;
+    margin: 5px;
+}
+#services .items .item p{
+    line-height: 1.4;
+    color: #95A2BB;
+}
+#services .items .item i{
+    color: #95A2BB;
+}
+#services .items .item:hover i{
+    color: #55BA53;
+
+}
+#services .items .item:hover{
+    color: #0a2940;
+    transform: scale(1.05);
+}
+
+#services .items .item:hover h3{
+    color: #f4f4f4;
+}
+
+/* Services Section Bottoin */
+#goal{
+    display: flex;
+    padding-top: 20px;
+}
+
+#goal div{
+    flex: 1;
+}
+
+#goal .goal-img{
+    display: inline-block;
+    position: relative;
+    width: 600px;
+    height: 300px;
+    overflow: hidden;
+}
+#goal .goal-img img{
+    width: auto;
+    height: 100%;
+    object-fit: cover;
 }
