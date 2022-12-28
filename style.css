@@ -144,11 +144,22 @@
     background: #cfcfcf;
     padding: 25px 95px;
     align-items: center;
-    margin: 0 auto;
+    margin:  auto;
     display: flex;
-    position: absolute;
+    position: fixed;
     justify-content: space-between;
+    overflow: hidden;
 }
+.navbar-botton.sticky{
+    padding: 15px 95px;
+    background: #f4f4f4;
+    border-bottom: 1px solid #0a2940;
+    color: #0a2940;
+    top:0;
+    z-index: 999 ;
+
+}
+
 
 .showcase .navbar-botton .brand-left {
     color: #55ba53;
@@ -156,6 +167,10 @@
     font-weight: 700;
     text-decoration: none;
     transition: all 0.5s ease;
+}
+
+.showcase .navbar-botton.sticky .brand-left {
+    color: #0a290a;
 }
 
 .showcase .navbar-botton .brand-left:hover {
@@ -169,6 +184,11 @@
     font-weight: 600;
 
 }
+
+.showcase .navbar-botton.sticky .menu-right li:last-child{
+    display: none;
+}
+
 
 .showcase .navbar-botton .menu-right a {
     text-decoration: none;
@@ -366,4 +386,57 @@
     align-self: flex-startS;
     border-radius: 5px;
     margin-right: 5pxS;
+}
+/* portfolio section styling  */
+
+#portfolio{
+    background: #0a2940;
+}
+.portfolio h3{
+    color: #95A2BB;
+    font-size: 14px;
+    padding-bottom: 20px;
+    text-transform: uppercase;
+}
+.portfolio h2{
+    font-size: 40px ;
+    font-weight: 600;
+    color: #95a2bb;
+    margin-bottom:  20px;
+}
+.portfolio h2 span{
+    font-weight: 500;
+}
+.portfolio p{
+    color: #95a2bb;
+    line-height: 1.6;
+    margin-bottom: 100px;
+}
+
+.owl-carousel .item img{
+    display: block;
+    width: 700px;
+    height: 300px;
+    border: 2px solid #95a2bb;
+    object-fit: cover;
+}
+.owl-dot{
+    text-align: center;
+    margin-top: 20px;
+}
+.owl-dot{
+    height: 13px;
+    width: 13px ;
+    margin: 0 5px;
+    outline: none !important ;
+    border-radius: 50% ;
+    border: 2px solid #55ba53 !important;
+}
+.owl-dot.active{
+    width: 35px;
+    border-radius: 14px;
+}
+.owl-dot.active,
+.owl-dot:hover{
+    background: #55ba53 !important;
 }
