@@ -279,12 +279,12 @@ html{
 
 /* services Section Styling */
 
-#services .items{
+#blog .items{
     display: flex;
     padding-bottom: 40px;
 }
 
-#services .items .item{
+#blog .items .item{
     text-align: center;
     padding: 10px;
     margin: 10px;
@@ -294,28 +294,28 @@ html{
     transition: all 0.5s ease;
 }
 
-#services .items .item h3{
+#blog .items .item h3{
     color: #55ba53;
     font-size: 16px;
     margin: 5px;
 }
-#services .items .item p{
+#blog .items .item p{
     line-height: 1.4;
     color: #95A2BB;
 }
-#services .items .item i{
+#blog .items .item i{
     color: #95A2BB;
 }
-#services .items .item:hover i{
+#blog .items .item:hover i{
     color: #55BA53;
 
 }
-#services .items .item:hover{
+#blog .items .item:hover{
     color: #0a2940;
     transform: scale(1.05);
 }
 
-#services .items .item:hover h3{
+#blog .items .item:hover h3{
     color: #f4f4f4;
 }
 
@@ -553,41 +553,41 @@ html{
 }
 
 /* Blog Section Styling */
-#blog{
+#services{
     background: #0a2940;
 }
-#blog .wrapper .header{
+#services .wrapper .header{
     display: flex;
     align-items:center ;
     margin-bottom: 20px ;
 }
-#blog .wrapper .header span{
+#services .wrapper .header span{
     height: 1px;
     width: 4%;
     background: #95a2bb;
 }
-#blog .wrapper .header h4{
+#services .wrapper .header h4{
     color: #95A2BB;
     padding-left: 15px;
     text-transform: uppercase;
 }
 
-#blog .wrapper .blog-info{
+#services .wrapper .blog-info{
     display: flex;
     align-items: center;
     justify-content: space-between;
     margin-bottom: 20px;
 }
 
-#blog .wrapper .blog-info h2{
+#services .wrapper .blog-info h2{
     font-size: 40px;
     color: #95a2bb;
     font-weight: 600;
 }
-#blog .wrapper .blog-info h2 span{
+#services .wrapper .blog-info h2 span{
     font-weight: 500;
 }
-#blog .wrapper .blog-info a{
+#services .wrapper .blog-info a{
     text-decoration: none;
     padding: 10px 20px;
     background: #55BA53;
@@ -599,33 +599,33 @@ html{
     border-radius: 5px;
     transition: 0.5s;
 }
-#blog .wrapper .blog-info a:hover{
+#services .wrapper .blog-info a:hover{
     background: none ;
     color: #95a2bb;
 }
-#blog .wrapper .blog-card{
+#services .wrapper .blog-card{
     display: flex;
     margin-top: -50px;
     justify-content: space-between;
     flex-wrap: wrap;
 }
 
-#blog .wrapper .card{
+#services .wrapper .card{
     margin: 70px 5px;
     background-color: #cfcfcf;
     border-radius: 5px;
     box-shadow: 0 2px 20px rgba(0, 0, 0, 0.2);
-    width: 370px;
+    width: 540px;
     overflow: hidden;
     z-index: 1;
     transition: all 0.5s ease;
 }
-#blog .wrapper .card:hover{
+#services .wrapper .card:hover{
     transform: scale(1.05);
 }
 
 
-#blog .wrapper .card .card-header img{
+#services .wrapper .card .card-header img{
     width: 100%;
     height: 200px;
     object-fit: cover;
@@ -633,7 +633,7 @@ html{
     margin-bottom: 10px;
 }
 
-#blog .wrapper .card .card-body .tag{
+#services .wrapper .card .card-body .tag{
     background: #ccc;
     border-radius: 50px;
     font-size: 12px;
@@ -644,17 +644,17 @@ html{
     cursor: pointer;
 }
 
-#blog .wrapper .card .card-body .tag-yellow{
-    background-color: yellow;
+#services .wrapper .card .card-body .tag-yellow{
+    background-color: rgb(193, 193, 6);
 }
-#blog .wrapper .card .card-body .tag-purple{
+#services .wrapper .card .card-body .tag-purple{
     background-color: #5c76bf;
 }
-#blog .wrapper .card .card-body .tag-pink{
+#services .wrapper .card .card-body .tag-pink{
     background-color:  #cd5b9f;
 }
 
-#blog .wrapper .card .card-body h4{
+#services .wrapper .card .card-body h4{
   margin: 10px 30px;
   font-weight: 600;
   font-size: 24px;
@@ -662,7 +662,7 @@ html{
   line-height: 1.4;
   color: #0a2940;
 }
-#blog .wrapper .card .card-body .footer{
+#services .wrapper .card .card-body .footer{
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -671,11 +671,11 @@ html{
     padding: 5px 0;
 }
 
-#blog .wrapper .card .card-body .footer small{
+#services .wrapper .card .card-body .footer small{
     color: #1a1b1e;
     font-weight: 600;
 }
-#blog .wrapper .card .card-body .footer a{
+#services .wrapper .card .card-body .footer a{
     padding: 5px 10px;
     background: #55ba53;
     border-radius: 4px;
