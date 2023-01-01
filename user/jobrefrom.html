@@ -1,0 +1,87 @@
+<!-- <?php
+include("includes/connection.php");
+
+?> -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+    <form action="" method="POST">
+        <div class="container">
+            <h1><b>job recutment request from</b></h1>
+            <p>fill your details </p>
+            <hr>
+            <label for="name"> <b>Name:</b> </label>
+            <input type="text" class="form-control" name="name" id="name" required>
+            <hr>
+            <label for="email"> <b>email :</b> </label>
+            <input type="email" class="form-control" name="email" id="email" required>
+            <hr>
+            <label for="phone"> <b> Phone : </b></label>
+            <input type="text" class="form-control" name="phone" id="phone" required>
+            <hr>
+            <div class="form-check">
+                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                <label class="form-check-label" for="flexRadioDefault1">Fresher </label>
+                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
+                <label class="form-check-label" for="flexRadioDefault2">Exprerenced</label>
+              </div>
+            <hr>
+            <label for="peducation"><b>Company you worked :</b> </label>
+            <textarea class="form-control" id="peducation" name="peducation" rows="3"></textarea>
+
+            <hr>
+
+            <div class="dropdown">
+                <button class="btn btn-secondary dropdown-toggle form-control" type="button" id="dropdownMenuButton"
+                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Service
+                </button>
+                <div class="dropdown-menu form-control" aria-labelledby="dropdownMenuButton">
+                    <a class="dropdown-item form-control">job</a>
+                </div>
+            </div>
+            <hr>
+            <label for="comment"><b>comment</b> </label>
+            <textarea class="form-control" id="comment" name="comment" rows="3" required></textarea>
+            <hr>
+            <button type="submit" name="submit" class="btn btn-success">Appy</button>
+            <button type="reset" class="btn btn-danger">Reset</button>
+            <hr>
+        </div>
+    </form>
+    <!-- <?php
+if(isset($_POST['submit']))
+{
+    $name = $_POST['name'];
+    $branch = $_POST['branch'];
+    $email = $_POST['email'];
+    $password = $_POST['psw'];
+    $conpassword = $_POST['pwsc'];
+
+    $res = mysqli_query($db,"INSERT into registration values ('', '$name', '$branch', '$email', '$password', '$conpassword')");
+    if($res)
+    {
+        echo "Success";
+    }
+    else {
+        echo "failed";
+    }
+}
+?> -->
+
+</body>
+
+</html>

@@ -9,8 +9,8 @@ include("includes/connection.php");
 
 <html>
     <title>login page</title>
-    <link rel="stylesheet" href="/admin/styles/style.css">
-<link rel="stylesheet" href="/admin/styles/bootstrap.min.css">
+    <link rel="stylesheet" href="../admin/styles/style.css">
+<link rel="stylesheet" href="../admin/styles/bootstrap.min.css">
     <link href="https://use.fontawesome.com/releases/v5.11.2/css/all.css" rel="stylesheet" />
     <body>
  <section  class="vh-100">
